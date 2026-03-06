@@ -13,6 +13,7 @@ PRIVATE_NETS = [
     ipaddress.ip_network("fe80::/10"),
 ]
 
+
 def normalize_url(raw: str) -> str:
     raw = raw.strip()
     p = urlparse(raw)
