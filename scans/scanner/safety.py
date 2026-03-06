@@ -14,6 +14,7 @@ PRIVATE_NETS = [
 ]
 
 
+
 def normalize_url(raw: str) -> str:
     raw = raw.strip()
     p = urlparse(raw)
