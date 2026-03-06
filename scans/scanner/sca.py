@@ -12,7 +12,6 @@ def parse_requirements_txt(text: str) -> list[tuple[str, str]]:
             out.append((m.group(1).lower(), m.group(2)))
     return out
 
-
 def parse_package_lock(text: str) -> list[tuple[str, str]]:
     out = []
     try:
