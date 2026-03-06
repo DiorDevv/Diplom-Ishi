@@ -22,6 +22,7 @@ def normalize_url(raw: str) -> str:
     normalized = urlunparse((scheme, netloc, path or "/", "", "", ""))
     return normalized
 
+
 def resolve_host_to_ips(host: str) -> list[str]:
     ips = set()
     for family, _, _, _, sockaddr in socket.getaddrinfo(host, None):
