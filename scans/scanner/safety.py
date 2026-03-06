@@ -30,6 +30,7 @@ def resolve_host_to_ips(host: str) -> list[str]:
     return list(ips)
 
 def is_private_ip(ip: str) -> bool:
+
     addr = ipaddress.ip_address(ip)
     return any(addr in net for net in PRIVATE_NETS)
 
